@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <Content Include="images\15 - View From Road.jpg" />
+    <Content Include="images\banner.jpg" />
     <Content Include="index.html" />
     <Content Include="scripts\lib\angular-file-upload-shim.js" />
     <Content Include="scripts\lib\angular-file-upload-shim.min.js" />
@@ -75,8 +77,6 @@
     <Content Include="styles\css\site.css" />
     <Content Include="styles\scss\nav.scss" />
     <Content Include="views\partials\tree.html" />
-    <None Include="Properties\PublishProfiles\morinreunion - FTP %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\morinreunion - Web Deploy %282%29.pubxml" />
     <Content Include="styles\scss\login.scss" />
     <Content Include="styles\scss\album.scss" />
     <Content Include="styles\scss\item.scss" />
@@ -94,8 +94,6 @@
     <Content Include="scripts\directives.js" />
     <Content Include="scripts\filters.js" />
     <Content Include="scripts\services.js" />
-    <None Include="Properties\PublishProfiles\morinreunion - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\morinreunion - Web Deploy.pubxml" />
     <Content Include="styles\scss\main.scss" />
     <Content Include="styles\scss\tree.scss" />
     <Content Include="styles\scss\_colors.scss" />
