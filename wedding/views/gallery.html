@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="clearfix">
+    <h1 class="left">{{currentRoute.title}}</h1>
+    <span class="right with-h1 new-album-width"><a class="with-h1-bottom" data-ng-href="#/CreateAlbum">Create new album</a></span>
+  </div>
+  <div class="album" data-ng-repeat="album in gallery" >
+    
+    <div class="album-image">
+      <a href="#/album/{{album.id}}"><img data-ng-src="{{album.imageUrl}}" alt="{{album.title}}" /></a>
+    </div>
+    <div class="album-text">
+      <span class="album-text-title" data-ng-bind-html="album.title"></span>
+      <span class="album-text-description" data-ng-bind-html="album.description"></span>
+    </div>
+
+  </div>
+
+</div>
+
+

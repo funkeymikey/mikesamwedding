@@ -1,0 +1,16 @@
+﻿@import "colors";
+
+.tree {
+    width: 10em;
+    height: 10em;
+}
+
+.tree-content {
+    fill: $black;
+    fill-opacity: 1;
+}
+
+.tree--header-logo {
+    vertical-align: middle;
+    width: 20vw;
+}
