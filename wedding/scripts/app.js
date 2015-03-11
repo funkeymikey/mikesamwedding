@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-var reunion = angular.module('reunion', ['ngRoute', 'ngResource', 'reunion.controllers', 'ngResponsiveImages', 'ngSanitize']);
+var reunion = angular.module('reunion', ['ngRoute', 'reunion.controllers']);
 //'reunion.directives', 'reunion.filters', 'reunion.services',
 
 reunion.config(['$routeProvider', function ($routeProvider) {
@@ -25,7 +25,7 @@ reunion.config(["$httpProvider", function ($httpProvider) {
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
 }]);
 
-reunion.run(['$rootScope', '$route', '$resource', '$location', function ($rootScope, $route, $resource, $location) {
+reunion.run(['$rootScope', '$route', '$location', function ($rootScope, $route, $location) {
   //ensure the title is right on first hit to the login page
   $rootScope.currentRoute = { path: '/', title: 'Home' };
 
