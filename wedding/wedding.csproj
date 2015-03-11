@@ -62,6 +62,7 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="images\15 - View From Road.jpg" />
+    <Content Include="images\background.jpg" />
     <Content Include="images\banner.jpg" />
     <Content Include="index.html" />
     <Content Include="scripts\lib\angular-file-upload-shim.js" />
