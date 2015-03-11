@@ -61,15 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
-    <Content Include="images\15 - View From Road.jpg" />
-    <Content Include="images\background.jpg" />
-    <Content Include="images\banner.jpg" />
+    <Content Include="images\mikesam.jpg" />
+    <Content Include="images\website-banner.jpg" />
     <Content Include="index.html" />
-    <Content Include="scripts\lib\angular-file-upload-shim.js" />
-    <Content Include="scripts\lib\angular-file-upload-shim.min.js" />
-    <Content Include="scripts\lib\angular-file-upload.js" />
-    <Content Include="scripts\lib\angular-file-upload.min.js" />
-    <Content Include="scripts\lib\angular-responsive-images.js" />
     <Content Include="views\album.html" />
     <Content Include="views\editAlbum.html" />
     <Content Include="views\createAlbum.html" />
@@ -88,7 +82,9 @@
     <Content Include="views\home.html" />
     <Content Include="views\login.html" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="scripts\lib\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="scripts\app.js" />
     <Content Include="scripts\controllers.js" />
