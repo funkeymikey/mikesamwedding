@@ -7,10 +7,12 @@ var reunion = angular.module('reunion', ['ngRoute', 'reunion.controllers']);
 reunion.config(['$routeProvider', function ($routeProvider) {
 
   //these are the items that show up in the navigation - in this order
-  $routeProvider.when('/', { templateUrl: 'views/home.html', controller: 'HomeCtrl', title: 'Home', caseInsensitiveMatch: true, navigation:true });
-  $routeProvider.when('/itinerary', { templateUrl: 'views/itinerary.html', controller: 'ItineraryCtrl', title: 'Itinerary', caseInsensitiveMatch: true, navigation: true });
+	$routeProvider.when('/', { templateUrl: 'views/home.html', controller: 'NullCtrl', title: 'Home', caseInsensitiveMatch: true, navigation: true });
+  $routeProvider.when('/itinerary', { templateUrl: 'views/itinerary.html', controller: 'NullCtrl', title: 'Itinerary', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/registry', { templateUrl: 'views/registry.html', controller: 'NullCtrl', title: 'Registry', caseInsensitiveMatch: true, navigation: true });
-  $routeProvider.when('/directions', { templateUrl: 'views/directions.html', controller: 'DirectionsCtrl', title: 'Directions', caseInsensitiveMatch: true, navigation: true });
+  $routeProvider.when('/accomodations', { templateUrl: 'views/accomodations.html', controller: 'NullCtrl', title: 'Accomodations', caseInsensitiveMatch: true, navigation: true });
+  $routeProvider.when('/activities', { templateUrl: 'views/activities.html', controller: 'NullCtrl', title: 'Activities', caseInsensitiveMatch: true, navigation: true });
+  $routeProvider.when('/directions', { templateUrl: 'views/directions.html', controller: 'NullCtrl', title: 'Directions', caseInsensitiveMatch: true, navigation: true });
   
   //other routes  
   //$routeProvider.when('/album/:albumId', { templateUrl: 'views/album.html', controller: 'AlbumCtrl', title: 'View Album', caseInsensitiveMatch: true });

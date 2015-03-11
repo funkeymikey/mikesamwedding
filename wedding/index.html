@@ -29,15 +29,19 @@
 	</header>
 
 	<!-- the content -->
-	<div class="ng-view"></div>
+	<section class="ng-view"></section>
 
+	<section>	i want some space here <br />
+		i want some space here <br />
+		i want some space here <br />
+		i want some space here <br />
+</section>
 	<footer class="content footer">
 
 		<!-- footer navigation -->
 		<div class="footer-nav">
 			<select class="dropdown" data-ng-model="$root.currentRoute" data-ng-options="r.title for r in routes" data-ng-change="redirect()"></select>
 		</div>
-
 	</footer>
 
 	<!-- overlay used to block UI while loading -->

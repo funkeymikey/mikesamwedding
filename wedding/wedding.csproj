@@ -64,10 +64,9 @@
     <Content Include="images\mikesam.jpg" />
     <Content Include="images\website-banner.jpg" />
     <Content Include="index.html" />
-    <Content Include="views\album.html" />
-    <Content Include="views\editAlbum.html" />
-    <Content Include="views\createAlbum.html" />
-    <Content Include="views\item.html" />
+    <Content Include="views\registry.html" />
+    <Content Include="views\accomodations.html" />
+    <Content Include="views\itinerary.html" />
     <Content Include="views\partials\committee-representatives.html" />
     <Content Include="styles\css\site.css" />
     <Content Include="styles\scss\nav.scss" />
@@ -77,10 +76,8 @@
     <Content Include="styles\scss\item.scss" />
     <None Include="styles\scss\site.scss" />
     <Content Include="views\activities.html" />
-    <Content Include="views\help.html" />
-    <Content Include="views\gallery.html" />
+    <Content Include="views\directions.html" />
     <Content Include="views\home.html" />
-    <Content Include="views\login.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scripts\lib\" />
