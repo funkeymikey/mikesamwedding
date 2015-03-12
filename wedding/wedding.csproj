@@ -64,6 +64,17 @@
     <Content Include="images\mikesam.jpg" />
     <Content Include="images\website-banner.jpg" />
     <Content Include="index.html" />
+    <Content Include="styles\css\main.css" />
+    <Content Include="styles\css\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="styles\css\nav.css" />
+    <Content Include="styles\css\nav.min.css">
+      <DependentUpon>nav.css</DependentUpon>
+    </Content>
+    <Content Include="styles\css\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
     <Content Include="views\registry.html" />
     <Content Include="views\accomodations.html" />
     <Content Include="views\itinerary.html" />
@@ -74,6 +85,15 @@
     <Content Include="styles\scss\login.scss" />
     <Content Include="styles\scss\album.scss" />
     <Content Include="styles\scss\item.scss" />
+    <Content Include="styles\css\nav.css.map">
+      <DependentUpon>nav.css</DependentUpon>
+    </Content>
+    <Content Include="styles\css\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="styles\css\main.css.map">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
     <None Include="styles\scss\site.scss" />
     <Content Include="views\activities.html" />
     <Content Include="views\directions.html" />
