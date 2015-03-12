@@ -18,15 +18,6 @@ section + section {
 .ng-cloak {
   display: none; }
 
-/*.content{
-	width: 90%;
-	margin: 0 5% auto;
-
-	@media (min-width: 60em){
-		width: 60em;
-		margin: 0 auto;
-  }
-}*/
 header {
   margin-bottom: 20px; }
 
