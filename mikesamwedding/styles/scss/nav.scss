@@ -1,4 +1,4 @@
-﻿.header-nav-container{
+﻿.header-nav-container {
 	@media (max-width: 37em) {
     display: none;
   }
@@ -6,7 +6,7 @@
 
 .header-nav {
 	text-align: center;
-	background-color: #eee;
+	background-color: $light-grey;
 	max-height: 50px;
 }
 .header-nav-menu-wrapper{
@@ -23,20 +23,20 @@
 }
 .header-nav-menu-wrapper>ul>li>a {
 	line-height: 20px;
-	color: #777;
+	color: $dark-grey;
 	position: relative;
 	display: block;
 	padding: 15px;
 }
 
 //the footer navigation - just a dropdown fixed to the bottom of the page
-.footer-nav{
+.footer-nav {
 	position: fixed;
 	height: 5ex;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: white;
+	background-color: $white;
 	padding: .25ex;
 	
 	@media (min-width: 37em) {
