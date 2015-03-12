@@ -24,8 +24,8 @@ section + section {
 		margin: 0 auto;
   }
 }*/
-.header-content {
-  text-align: center; }
+header {
+  margin-bottom: 20px; }
 
 .title {
   display: inline;
@@ -174,7 +174,6 @@ input.ng-invalid, .invalidEmail {
   min-height: 50px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 20px;
   background-color: #eee;
   border-radius: 4px;
   min-width: 260px; }

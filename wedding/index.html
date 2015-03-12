@@ -18,6 +18,7 @@
 <body class="ng-cloak">
 
 	<header>
+		<!-- banner -->
 		<img src="images/website-banner.jpg" class="full-width" alt="banner" />
 
 		<!-- header navigation -->
@@ -28,21 +29,31 @@
 				</ul>
 			</div>
 		</div>
+
 	</header>
 
-	<section class="body container">
+	<section class="container">
 		<div class="row">
+
 			<aside class="col-md-2 col-xs-12">
-				<h1>RSVP</h1>
-				<p>
-					Let us know you're coming by filling out the RSVP form <a href="https://docs.google.com/forms/d/1ntLtGkKoqOJYsL9DReL1MbXMdm3on6lMSGpuwQITavI/viewform" target="wedding-rsvp">here</a>
-				</p>
+			
+				<!-- The RSVP section -->
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3>RSVP</h3>
+					</div>
+					<div class="panel-body">
+						Let us know you're coming by filling out the RSVP form <a href="https://docs.google.com/forms/d/1ntLtGkKoqOJYsL9DReL1MbXMdm3on6lMSGpuwQITavI/viewform" target="wedding-rsvp">here</a>
+					</div>
+				</div>
 			</aside>
 
 			<!-- the content -->
 			<div class="ng-view col-md-10 col-xs-12"></div>
+
 		</div>
 	</section>
+
 
 	<footer class="content footer">
 
@@ -50,6 +61,7 @@
 		<div class="footer-nav">
 			<select class="dropdown" data-ng-model="$root.currentRoute" data-ng-options="r.title for r in routes" data-ng-change="redirect()"></select>
 		</div>
+
 	</footer>
 
 	<!-- overlay used to block UI while loading -->

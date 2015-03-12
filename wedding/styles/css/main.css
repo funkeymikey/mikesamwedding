@@ -20,8 +20,8 @@ section + section {
 		margin: 0 auto;
   }
 }*/
-.header-content {
-  text-align: center; }
+header {
+  margin-bottom: 20px; }
 
 .title {
   display: inline;
