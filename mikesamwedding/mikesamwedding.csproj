@@ -64,10 +64,6 @@
     <Content Include="images\mikesam.jpg" />
     <Content Include="images\website-banner.jpg" />
     <Content Include="index.html" />
-    <Content Include="styles\css\main.css" />
-    <Content Include="styles\css\main.min.css">
-      <DependentUpon>main.css</DependentUpon>
-    </Content>
     <Content Include="styles\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>
     </Content>
@@ -78,31 +74,18 @@
     <Content Include="styles\css\site.css" />
     <Content Include="styles\scss\nav.scss" />
     <Content Include="views\partials\tree.html" />
-    <Content Include="styles\scss\login.scss" />
-    <Content Include="styles\scss\album.scss" />
-    <Content Include="styles\scss\item.scss" />
     <Content Include="styles\css\site.css.map">
       <DependentUpon>site.css</DependentUpon>
-    </Content>
-    <Content Include="styles\css\main.css.map">
-      <DependentUpon>main.css</DependentUpon>
     </Content>
     <None Include="styles\scss\site.scss" />
     <Content Include="views\activities.html" />
     <Content Include="views\directions.html" />
     <Content Include="views\home.html" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\lib\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="scripts\app.js" />
-    <Content Include="scripts\controllers.js" />
-    <Content Include="scripts\directives.js" />
-    <Content Include="scripts\filters.js" />
-    <Content Include="scripts\services.js" />
     <Content Include="styles\scss\main.scss" />
-    <Content Include="styles\scss\tree.scss" />
     <Content Include="styles\scss\_colors.scss" />
   </ItemGroup>
   <PropertyGroup>
