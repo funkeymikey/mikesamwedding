@@ -1,4 +1,4 @@
-﻿@media (max-width: 26em) {
+﻿@media (max-width: 37em) {
   .header-nav-container {
     display: none; } }
 
@@ -39,7 +39,7 @@
   width: 100%;
   background-color: white;
   padding: 0.25ex; }
-  @media (min-width: 29em) {
+  @media (min-width: 37em) {
     .footer-nav {
       display: none; } }
 

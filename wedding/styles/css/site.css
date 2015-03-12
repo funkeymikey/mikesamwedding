@@ -165,7 +165,7 @@ input.ng-invalid, .invalidEmail {
   vertical-align: middle;
   width: 20vw; }
 
-@media (max-width: 26em) {
+@media (max-width: 37em) {
   .header-nav-container {
     display: none; } }
 
@@ -206,7 +206,7 @@ input.ng-invalid, .invalidEmail {
   width: 100%;
   background-color: white;
   padding: 0.25ex; }
-  @media (min-width: 29em) {
+  @media (min-width: 37em) {
     .footer-nav {
       display: none; } }
 
