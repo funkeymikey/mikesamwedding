@@ -1,5 +1,9 @@
 ﻿@import "colors";
 
+html {
+    overflow-y: scroll;
+}
+
 // set all text to be off-black
 body {
 	color: $black;

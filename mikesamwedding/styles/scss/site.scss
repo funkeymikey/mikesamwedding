@@ -3,8 +3,4 @@
   sass --watch scss/site.scss:css/site.css
   */
 @import "main";
-@import "tree";
 @import "nav";
-@import "login";
-@import "album";
-@import "item";
