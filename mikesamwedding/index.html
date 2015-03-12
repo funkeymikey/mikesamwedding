@@ -8,8 +8,8 @@
 
 	<title data-ng-bind="'Mike and Sam Wedding - ' + currentRoute.title">Mike and Sam Wedding</title>
 
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="../styles/css/site.css" rel="stylesheet" />
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="styles/css/site.min.css" rel="stylesheet" />
 
 	<link rel="canonical" href="http://www.mikesamwedding.com" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -23,10 +23,12 @@
 
 		<!-- header navigation -->
 		<div class="header-nav-container">
-			<div id="menu" class="header-nav ">
-				<ul>
-					<li data-ng-repeat="r in routes"><a href="#{{r.path}}">{{r.title}}</a></li>
-				</ul>
+			<div class="header-nav sticky">
+				<div class="header-nav-menu-wrapper">
+					<ul>
+						<li data-ng-repeat="r in routes"><a href="#{{r.path}}">{{r.title}}</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -36,14 +38,16 @@
 		<div class="row">
 
 			<aside class="col-md-2 col-xs-12">
-			
+
 				<!-- The RSVP section -->
 				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h3>RSVP</h3>
-					</div>
 					<div class="panel-body">
-						Let us know you're coming by filling out the RSVP form <a href="https://docs.google.com/forms/d/1ntLtGkKoqOJYsL9DReL1MbXMdm3on6lMSGpuwQITavI/viewform" target="wedding-rsvp">here</a>
+						<p>
+							Please let us know if you'll be able to attend or not by responding using our RSVP form.
+						</p>
+						<div>
+							<a class="btn btn-success" href="https://docs.google.com/forms/d/1ntLtGkKoqOJYsL9DReL1MbXMdm3on6lMSGpuwQITavI/viewform" target="wedding-rsvp">RSVP now</a>
+						</div>
 					</div>
 				</div>
 			</aside>
@@ -75,7 +79,6 @@
 
 	<!-- this needs to be loaded before angular -->
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 
 	<!-- angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
@@ -85,15 +88,15 @@
 
 	<!-- reunion -->
 	<script src="scripts/app.js"></script>
-	<script src="scripts/controllers.js"></script>
+	<!--<script src="scripts/controllers.js"></script>
 	<script src="scripts/services.js"></script>
-	<!--<script src="scripts/filters.js"></script>
+	<script src="scripts/filters.js"></script>
 	<script src="scripts/directives.js"></script>-->
 
 	<script type="text/javascript">
 		$(function () {
 			// Create a clone of the menu, right next to original.
-			$('#menu').addClass('original').clone().insertAfter('#menu').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+			$('.sticky').addClass('original').clone().insertAfter('.sticky').addClass('cloned').css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
 
 			scrollIntervalID = setInterval(stickIt, 10);
 

@@ -5,27 +5,23 @@
 }
 
 .header-nav {
-	position: relative;
-	min-height: 50px;
-	padding-right: 15px;
-	padding-left: 15px;
+	text-align: center;
 	background-color: #eee;
-	border-radius: 4px;
-	min-width:260px;
+	max-height: 50px;
 }
-.header-nav>ul {
-	float: left;
-	margin-top: 0;
-	margin-bottom: 0;
+.header-nav-menu-wrapper{
+	display: inline-block;
+}
+.header-nav-menu-wrapper>ul {
 	padding-left: 0;
 	list-style: none;
 }
-.header-nav>ul>li {
+.header-nav-menu-wrapper>ul>li {
 	float: left;
 	position: relative;
 	display: block;
 }
-.header-nav>ul>li>a {
+.header-nav-menu-wrapper>ul>li>a {
 	line-height: 20px;
 	color: #777;
 	position: relative;

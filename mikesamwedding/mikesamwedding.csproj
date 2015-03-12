@@ -68,10 +68,6 @@
     <Content Include="styles\css\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
-    <Content Include="styles\css\nav.css" />
-    <Content Include="styles\css\nav.min.css">
-      <DependentUpon>nav.css</DependentUpon>
-    </Content>
     <Content Include="styles\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>
     </Content>
@@ -85,9 +81,6 @@
     <Content Include="styles\scss\login.scss" />
     <Content Include="styles\scss\album.scss" />
     <Content Include="styles\scss\item.scss" />
-    <Content Include="styles\css\nav.css.map">
-      <DependentUpon>nav.css</DependentUpon>
-    </Content>
     <Content Include="styles\css\site.css.map">
       <DependentUpon>site.css</DependentUpon>
     </Content>

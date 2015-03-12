@@ -1,11 +1,9 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-var reunion = angular.module('reunion', ['ngRoute', 'reunion.controllers']);
-//'reunion.directives', 'reunion.filters', 'reunion.services',
+var reunion = angular.module('reunion', ['ngRoute']);
 
 reunion.config(['$routeProvider', function ($routeProvider) {
-
   //these are the items that show up in the navigation - in this order
 	$routeProvider.when('/', { templateUrl: 'views/home.html', controller: 'NullCtrl', title: 'Home', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/itinerary', { templateUrl: 'views/itinerary.html', controller: 'NullCtrl', title: 'Itinerary', caseInsensitiveMatch: true, navigation: true });
@@ -13,14 +11,7 @@ reunion.config(['$routeProvider', function ($routeProvider) {
   $routeProvider.when('/accomodations', { templateUrl: 'views/accomodations.html', controller: 'NullCtrl', title: 'Accomodations', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/activities', { templateUrl: 'views/activities.html', controller: 'NullCtrl', title: 'Activities', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/directions', { templateUrl: 'views/directions.html', controller: 'NullCtrl', title: 'Directions', caseInsensitiveMatch: true, navigation: true });
-  
-  //other routes  
-  //$routeProvider.when('/album/:albumId', { templateUrl: 'views/album.html', controller: 'AlbumCtrl', title: 'View Album', caseInsensitiveMatch: true });
-  //$routeProvider.when('/item/:itemId', { templateUrl: 'views/item.html', controller: 'ItemCtrl', title: 'View Item', caseInsensitiveMatch: true });
-  //$routeProvider.when('/createAlbum', { templateUrl: 'views/createAlbum.html', controller: 'CreateAlbumCtrl', title: 'Create Album', caseInsensitiveMatch: true });
-  //$routeProvider.when('/editAlbum/:albumId', { templateUrl: 'views/editAlbum.html', controller: 'EditAlbumCtrl', title: 'Edit Album', caseInsensitiveMatch: true });
-  $routeProvider.otherwise({ redirectTo: '/' });
-
+$routeProvider.otherwise({ redirectTo: '/' });
 }]);
 
 reunion.config(["$httpProvider", function ($httpProvider) {
@@ -42,8 +33,7 @@ reunion.run(['$rootScope', '$route', '$location', function ($rootScope, $route, 
   }
 
   //When we change pages
-  // 1) check to see if we're not authenticated
-  // 2) find the route with the matching path, set it to be the current so the title and footer nav will update
+  //find the route with the matching path, set it to be the current so the title and footer nav will update
   $rootScope.$on("$routeChangeSuccess", function (currentRoute, previousRoute) {
   	for (var r in $rootScope.routes) {
   		if ($rootScope.routes[r].path === $route.current.originalPath)
@@ -58,4 +48,4 @@ reunion.run(['$rootScope', '$route', '$location', function ($rootScope, $route, 
 
 }]);
 
-
+reunion.controller('NullCtrl', function () { });
