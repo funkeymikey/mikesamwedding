@@ -64,10 +64,6 @@
     <Content Include="images\mikesam.jpg" />
     <Content Include="images\website-banner.jpg" />
     <Content Include="index.html" />
-    <Content Include="styles\css\main.css" />
-    <Content Include="styles\css\main.min.css">
-      <DependentUpon>main.css</DependentUpon>
-    </Content>
     <Content Include="styles\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>
     </Content>
@@ -80,9 +76,6 @@
     <Content Include="views\partials\tree.html" />
     <Content Include="styles\css\site.css.map">
       <DependentUpon>site.css</DependentUpon>
-    </Content>
-    <Content Include="styles\css\main.css.map">
-      <DependentUpon>main.css</DependentUpon>
     </Content>
     <None Include="styles\scss\site.scss" />
     <Content Include="views\activities.html" />
