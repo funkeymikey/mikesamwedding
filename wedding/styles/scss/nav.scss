@@ -1,4 +1,10 @@
-﻿.header-nav {
+﻿.header-nav-container{
+	@media (max-width: 26em) {
+    display: none;
+  }
+}
+
+.header-nav {
 	position: relative;
 	min-height: 50px;
 	padding-right: 15px;
@@ -7,10 +13,6 @@
 	background-color: #eee;
 	border-radius: 4px;
 	min-width:260px;
-	 
-	@media (max-width: 26em) {
-    display: none;
-  }
 }
 .header-nav>ul {
 	float: left;
@@ -41,4 +43,8 @@
 	width: 100%;
 	background-color: white;
 	padding: .25ex;
+	
+	@media (min-width: 29em) {
+    display: none;
+  }
 }

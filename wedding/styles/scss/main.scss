@@ -9,9 +9,6 @@ body {
 // give space at the bottom for the footer nav
 footer{
  height: 5ex;
- 	@media (min-width: 26em) {
-    display: none;
-  }
 }
 
 section + section {
@@ -23,7 +20,7 @@ section + section {
 	display:none;
 }
 
-.content{
+/*.content{
 	width: 90%;
 	margin: 0 5% auto;
 
@@ -31,7 +28,7 @@ section + section {
 		width: 60em;
 		margin: 0 auto;
   }
-}
+}*/
 
 .header-content {
     text-align: center;
@@ -58,6 +55,10 @@ section + section {
 
 .link{
 	cursor: pointer;
+}
+
+.full-width{
+	width:100%;
 }
 
 .dropdown{
