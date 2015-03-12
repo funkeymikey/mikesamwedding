@@ -19,23 +19,36 @@
 
 	<header>
 		<img src="images/website-banner.jpg" alt="banner" style="width:100%" />
+
 		<!-- header navigation -->
 		<div id="menu" class="header-nav sticky">
 			<ul>
 				<li data-ng-repeat="r in routes"><a href="#{{r.path}}">{{r.title}}</a></li>
 			</ul>
 		</div>
-
 	</header>
 
-	<!-- the content -->
-	<section class="ng-view"></section>
+	<section class="body container">
+		<div class="row">
+			<aside class="col-md-2">
+				<h1>RSVP</h1>
+				<p>
+					Let us know you're coming by filling out the RSVP form <a href="https://docs.google.com/forms/d/1ntLtGkKoqOJYsL9DReL1MbXMdm3on6lMSGpuwQITavI/viewform" target="wedding-rsvp">here</a>
+				</p>
+			</aside>
 
-	<section>	i want some space here <br />
+			<!-- the content -->
+			<div class="ng-view col-md-10"></div>
+		</div>
+	</section>
+
+	<section>
 		i want some space here <br />
 		i want some space here <br />
 		i want some space here <br />
-</section>
+		i want some space here <br />
+	</section>
+
 	<footer class="content footer">
 
 		<!-- footer navigation -->
