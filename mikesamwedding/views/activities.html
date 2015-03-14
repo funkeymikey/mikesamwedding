@@ -65,14 +65,29 @@
 
 <script type="text/javascript">
 	$(function () {
-		//set all the blocks to be the same height
-		var maxHeight = -1;
-		$('#things-to-do').children().each(function () {
-			var thisHeight = $(this).height();
-			if (thisHeight > maxHeight)
-				maxHeight = thisHeight;
-		});
+		function resizeBlocks() {
 
-		$('#things-to-do').children().height(maxHeight);
+			//clear out any enforced heights
+			$('#things-to-do').children().css("height", "")
+
+			//find the maximum child's height
+			var maxHeight = -1;
+			$('#things-to-do').children().each(function () {
+				var thisHeight = $(this).height();
+				if (thisHeight > maxHeight)
+					maxHeight = thisHeight;
+			});
+
+			//set them all to be the maximum
+			$('#things-to-do').children().height(maxHeight);
+		}
+
+		resizeBlocks();
+
+		//should probably debounce this...
+		$(window).resize(function () {
+			resizeBlocks();
+		});
+		
 	});
 </script>
