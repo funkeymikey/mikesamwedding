@@ -5,22 +5,7 @@
 			If you have thinking of spending some extra time while you're up here, there's quite a lot to do in the area.
 	</section>
 
-	<section class="row">
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<h3>Mountain Biking</h3>
-			There's downhill mountain biking at oak mountain.  Bring your own bike and you can bring it up on the lift and then ride za down.  More info <a href="http://oakmountainski.com/home/index.php/mountain/mountainbiking">here</a>.
-		</div>
-
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<h3>Boat rental</h3>
-			Lots of lakes, can rent boats and go motoring, kayaking, canoeing in the lakes
-		</div>
-
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<h3>Swimming</h3>
-			The Adirondacks are full of some beautiful lakes and ponds.  So bring Do some swimming at the beaches
-		</div>
-
+	<section id="things-to-do" class="row">
 		<div class="col-md-4 col-sm-6 col-xs-12">
 			<h3>Hiking</h3>
 			It's the Adirondacks!  There's so many mountains nearby, go to the top of them!  I've always wanted to hike up Blue Mountain.  And the High
@@ -29,10 +14,10 @@
 		</div>
 
 		<div class="col-md-4 col-sm-6 col-xs-12">
-			<h3>Lake Placid</h3>
-			Lake placid is one of our favorite areas and is worth its own mention. It's a two hour drive north from Speculator.  Once there, you can explore
-			the site of	two (2!) olympic games, which includes a bobsled run and ski jumps.  You can drive to the top of Whiteface Mountain.  You can explore
-			their cute downtown and olympic museum.  Unfortunely, The Pipe and Book has closed, so you'll have to bring your own pipes and books.
+			<h3>Swimming</h3>
+			The Adirondacks are full of some beautiful lakes and ponds.  There's public beaches in just aboutevery town, and if you're not in a town and come
+			upon a body of water, feel free to hop in for a dip.  So bring your swimsuits and have them available for any occasion, some of us try to jump
+			in the nearest body of water after every long hike!
 		</div>
 
 		<div class="col-md-4 col-sm-6 col-xs-12">
@@ -43,15 +28,50 @@
 		</div>
 
 		<div class="col-md-4 col-sm-6 col-xs-12">
+			<h3>Lake Placid</h3>
+			Lake placid is one of our favorite areas and is worth its own mention. It's a two hour drive north from Speculator.  Once there, you can explore
+			the site of	2 (TWO!) olympic games, which includes a bobsled run and ski jumps.  You can drive up to the top of Whiteface Mountain.  You can explore
+			their cute downtown and olympic museum.  Unfortunely, the Pipe and Book has closed, so you'll have to bring your own pipes and books.
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-12">
 			<h3>Amusement parks</h3>
-			There's <a href="http://www.watersafari.com/">Enchanted Forest Water Safari</a> (where the fun never stops) in Old Forge, which is about
-			an hour and a half west. Of course <a href="https://www.sixflags.com/greatescape">The Great Escape</a> is about an hour east, in Lake George.
-			Also in Lake George, <a href="http://www.adirondackextreme.com/">Adirondack Extreme Adventure Course</a> looks pretty neat.
+			There's <a href="http://www.watersafari.com/">Enchanted Forest Water Safari</a> (where the fun never stops) in Old Forge, which is about an hour
+			and a half west of Speculator. Of course, there's <a href="https://www.sixflags.com/greatescape">The Great Escape</a> about an hour east in Lake
+			George.  Also in Lake George, <a href="http://www.adirondackextreme.com/">Adirondack Extreme Adventure Course</a> looks pretty neat.
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<h3>On the water</h3>
+			There's lakes everywhere!  Big ones like Lake George and the Great Sacandaga Lake and little ones like Lake Pleasant and Oxbow Lake.  When there's
+			lakes, you can go out on the water.  There's motor boat and jet ski rentals for the big ones, and kayak and canoe rentals in the smaller ones.  A
+			few	even have sea planes that you can charter for a ride.
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<h3>Mountain Biking</h3>
+			There's downhill mountain biking at Oak Mountain.  Bring your own bike and buy a day pass so you can bring it up on the lift and then show the
+			mountain who's boss all day long.  More info <a href="http://oakmountainski.com/home/index.php/mountain/mountainbiking">here</a>.
 		</div>
 
 		<div class="col-md-4 col-sm-6 col-xs-12">
 			<h3>Disc Golf</h3>
-			Allegedly there will be a course built this spring at Oak Mountain.  More info <a href="http://oakmountainski.com/home/index.php/mountain/disc-golf">here</a>.
+			Who doesn't love a round of disc golf?  Allegedly there will be a course built this spring at Oak Mountain.  More info on their
+			<a href="http://oakmountainski.com/home/index.php/mountain/disc-golf">website</a>.
 		</div>
 	</section>
 </div>
+
+<script type="text/javascript">
+	$(function () {
+		//set all the blocks to be the same height
+		var maxHeight = -1;
+		$('#things-to-do').children().each(function () {
+			var thisHeight = $(this).height();
+			if (thisHeight > maxHeight)
+				maxHeight = thisHeight;
+		});
+
+		$('#things-to-do').children().height(maxHeight);
+	});
+</script>
