@@ -8,10 +8,10 @@ reunion.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider.when('/', { templateUrl: 'views/home.html', controller: 'NullCtrl', title: 'Home', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/itinerary', { templateUrl: 'views/itinerary.html', controller: 'NullCtrl', title: 'Itinerary', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/registry', { templateUrl: 'views/registry.html', controller: 'NullCtrl', title: 'Registry', caseInsensitiveMatch: true, navigation: true });
-  $routeProvider.when('/accomodations', { templateUrl: 'views/accomodations.html', controller: 'NullCtrl', title: 'Accomodations', caseInsensitiveMatch: true, navigation: true });
+  $routeProvider.when('/accommodations', { templateUrl: 'views/accommodations.html', controller: 'NullCtrl', title: 'Accommodations', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/activities', { templateUrl: 'views/activities.html', controller: 'NullCtrl', title: 'Activities', caseInsensitiveMatch: true, navigation: true });
   $routeProvider.when('/directions', { templateUrl: 'views/directions.html', controller: 'NullCtrl', title: 'Directions', caseInsensitiveMatch: true, navigation: true });
-$routeProvider.otherwise({ redirectTo: '/' });
+	$routeProvider.otherwise({ redirectTo: '/' });
 }]);
 
 reunion.config(["$httpProvider", function ($httpProvider) {

@@ -68,7 +68,7 @@
       <DependentUpon>site.css</DependentUpon>
     </Content>
     <Content Include="views\registry.html" />
-    <Content Include="views\accomodations.html" />
+    <Content Include="views\accommodations.html" />
     <Content Include="views\itinerary.html" />
     <Content Include="views\partials\committee-representatives.html" />
     <Content Include="styles\css\site.css" />
